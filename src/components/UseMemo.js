@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 
 function UseMemoExample({ count }) {
   const expensiveCalculation = (num) => {
@@ -7,7 +7,7 @@ function UseMemoExample({ count }) {
     return num;
   };
 
-  const memoizedValue = React.useMemo(() => expensiveCalculation(count), [count]);
+  const memoizedValue = useMemo(() => expensiveCalculation(count), [count]);
 
   return (
     <div>

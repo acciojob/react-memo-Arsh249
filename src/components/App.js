@@ -18,15 +18,15 @@ function App() {
         {todos.map((todo, index) => (
           <p key={index}>{todo}</p>
         ))}
-        <button onClick={addTodo}>Add Todo</button>
+        <button id='add-todo-btn' onClick={addTodo}>Add Todo</button>
         <div>
           <span>Count: {count}</span>
-          <button onClick={() => setCount(count + 1)}>+</button>
+          <button id='incr-cnt' onClick={() => setCount(count + 1)}>+</button>
         </div>
       </div>
 
-      <UseMemoExample />
-      <ReactMemoExample />
+      <UseMemoExample count={count}/>
+      <ReactMemoExample todos={todos} setTodos={setTodos}/>
     </div>
   );
 }
