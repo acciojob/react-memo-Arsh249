@@ -16,7 +16,7 @@ function UseMemoExample({ count }) {
   return (
     <div>
       <h2>Expensive Calculation</h2>
-      <p>{memoizedValue}</p>
+      <p id='calc'>{memoizedValue}</p>
     </div>
   );
 }
