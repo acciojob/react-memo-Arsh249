@@ -19,10 +19,10 @@ const ReactMemoExample = React.memo(({ todos, setTodos }) => {
   return (
     <div>
       <input type="text" value={skill} onChange={handleChange} placeholder="Enter a skill" />
-      <button id='skill-input' onClick={addSkill}>Add Skill</button>
+      <button id='skill-btn' onClick={addSkill}>Add Skill</button>
       <ul>
         {todos.map((todo, index) => (
-          <li key={index}>{todo}</li>
+          <li key={index} id={`todo-${index}`}>{todo}</li>
         ))}
       </ul>
     </div>

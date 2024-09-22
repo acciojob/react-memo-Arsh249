@@ -11,7 +11,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App" id='main'>
       <h1>React.useMemo</h1>
       <div>
         <h2>My todos</h2>
@@ -21,7 +21,7 @@ function App() {
         <button id='add-todo-btn' onClick={addTodo}>Add Todo</button>
         <div>
           <span>Count: {count}</span>
-          <button id='incr-cnt' onClick={() => setCount(count + 1)}>+</button>
+          <button id='incr-cnt' onClick={() => setCount(count + 1)}>0</button>
         </div>
       </div>
 
