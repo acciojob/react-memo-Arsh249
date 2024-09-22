@@ -20,8 +20,8 @@ function App() {
         ))}
         <button id='add-todo-btn' onClick={addTodo}>Add Todo</button>
         <div>
-          <span id='incr-btn'>Count: {count+1}</span>
-          <button id='incr-cnt' onClick={() => setCount(count + 1)}>1</button>
+          <span id='incr-btn'>Count: {count}</span>
+          <button id='incr-cnt' onClick={() => setCount(count + 1)}>{count}</button>
         </div>
       </div>
 
